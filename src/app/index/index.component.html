@@ -1,3 +1,16 @@
-<mat-toolbar role="heading" color="primary">Learn Java</mat-toolbar>
-
-<router-outlet></router-outlet>
+<mat-sidenav-container class="page">
+    <mat-sidenav #sidenav role="directory" mode="over">
+        <mat-nav-list>
+            <a mat-list-item href="/learnjava">Intro</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar role="heading" color="primary">
+            <button mat-icon-button aria-label="Open menu" (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Learn Java</span>
+        </mat-toolbar>
+        <router-outlet role="main"></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
