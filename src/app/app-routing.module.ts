@@ -8,10 +8,13 @@ import { IntroModule } from './intro/intro.module';
 import { IntroComponent } from './intro/intro.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { InstallComponent } from './install/install.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { HelloWorldModule } from './hello-world/hello-world.module';
 
 const routes: Routes = [
   { path: '', component: IntroComponent },
   { path: 'install', component: InstallComponent },
+  { path: 'helloworld', component: HelloWorldComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -20,12 +23,12 @@ const routes: Routes = [
   imports: [
     CommonModule,
     IntroModule,
+    HelloWorldModule,
     NotFoundModule,
-    RouterModule.forRoot(
-      routes,
-      { enableTracing: true }
-    ),
+    RouterModule.forRoot(routes),
   ],
-  exports: [ RouterModule ]
+  exports: [
+    RouterModule,
+  ]
 })
 export class AppRoutingModule { }

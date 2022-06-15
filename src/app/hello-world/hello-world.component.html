@@ -1,0 +1,44 @@
+<div class="content">
+    <h1>Hello World</h1>
+
+    <p>The first program we will write is a program that says <samp>hello, world</samp>.</p>
+
+    <h2>Creating a new file</h2>
+
+    <p>Right click the <code>java</code> folder and select New > Java class. Name it <code>Hello</code>.</p>
+
+<pre><code><span class="kw">public class</span> Hello &#123;
+&#125;</code></pre>
+
+    <p>
+        So far, this code doesn't do anything. First, let's break it apart. In Java, there is something called a class. Objects, like integers and
+        strings (text) are implemented with classes. You can create an instance of a class. You can think of the class as a blueprint and the instance
+        as a house. Instances can have methods, which can do things with them. Classes can also have static methods, which mean that they don't do
+        something with an instance, but they can still do things. Some classes are not supposed to be blueprints. They are there to provide helper
+        static methods. Our program, <code>Hello</code>, has a class with the same name. We need to run the program. For that, we need some more
+        code. To define a class, we can use <code><span class="kw">[visibility] class [name]</span></code>. The visibility is when you are
+        writing code for others to use. The default, package private, is only accessible within your code. Public means it's accessible everywhere.
+        We declare all the methods inside curly braces. It is proper style to indent everything inside braces. The IDE will add some space before
+        your method, and you shouldn't delete it. Here is the method.
+    </p>
+
+<pre><code><span class="kw">public class</span> Hello &#123;
+    <span class="kw">public static void</span> <span class="meth-decl">main</span>(String[] args) &#123;
+    &#125;
+&#125;</code></pre>
+
+    <p>
+        Methods are more complicated. To define the part of your program that is executed, you can use
+        <code><span class="kw">public static void</span>&nbsp;<span class="meth-decl">main</span>(String[] args)</code>. The code inside
+        <code>main</code> is also inside braces, with more indentation. We can click the green play button on the first line, and it will run the
+        program. You can try to run it yourself, however, it will do nothing. To print something to the console, we need more code.
+    </p>
+
+<pre><code><span class="kw">public class</span> Hello &#123;
+    <span class="kw">public static void</span> <span class="meth-decl">main</span>(String[] args) &#123;
+        System.<span class="stat-fld">out</span>.println(<span class="str">"hello, world"</span>)<span class="kw">;</span>
+    &#125;
+&#125;</code></pre>
+
+    <p>When you run this, you will see <samp>hello, world</samp> in the console.</p>
+</div>

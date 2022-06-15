@@ -134,5 +134,7 @@
       }
     }
   },
-  "defaultProject": "learnjava"
+  "cli": {
+    "analytics": "7b0fd5a8-517c-4d21-87ce-5860f81215b5"
+  }
 }

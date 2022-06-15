@@ -27,6 +27,6 @@ import { AppRoutingModule } from '../app-routing.module';
     MatIconModule,
     MatListModule,
   ],
-  bootstrap: [IndexComponent]
+  bootstrap: [IndexComponent],
 })
 export class IndexModule { }

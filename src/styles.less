@@ -6,4 +6,25 @@ abbr { cursor: help; }
 img { display: block; }
 .content { margin: 8px 8px 0; }
 .page { width: 100vw; height: 100vh; }
-code { font-family: 'Roboto Mono', monospace; }
+code {
+    font-family: 'Roboto Mono', monospace;
+
+    span {
+        &.kw {
+            color: #0033b3;
+        }
+
+        &.meth-decl {
+            color: #00627a;
+        }
+
+        &.stat-fld {
+            color: #871094;
+            font-style: italic;
+        }
+
+        &.str {
+            color: #067d17;
+        }
+    }
+}
