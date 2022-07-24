@@ -1,3 +1,3 @@
 # Learn Java
 
-This a website to learn Java.
+This repository is archived and will be replaced by an EduTools course.
